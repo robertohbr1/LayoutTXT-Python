@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layouttxt"
+version = "1.0.0"
+description = "Visualizador e editor de arquivos texto posicionais por layout CSV (recriação do LayoutTXT em VB6)"
+requires-python = ">=3.11"
+
+[project.scripts]
+layouttxt = "layouttxt.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
