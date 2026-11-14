@@ -1,0 +1,33 @@
+Id;Nome;Inic;Fim;Tam;TP;Fixo;Formato;Tag
+H;Tipo de Registro;1;1;1;F;H;“H”;X
+H;Empresa;2;5;4;N;;Código da empresa válido no sistema;
+H;Sigla da Interface;6;7;2;C;;Fixo = AG ;
+H;Data de geração;8;15;8;DAAAAMMDD;;Data em que o arquivo foi gerado;
+H;Descrição;16;75;60;C;;Fixo = Credimaster para ConPag;
+D;Tipo de Registro;1;1;1;F;D;“D”;X
+D;Unidade;2;11;10;C;;Código da unidade;
+D;Data de pagamento;12;19;8;DAAAAMMDD;;Data de pagamento da despesa e/ou adiantamento;
+D;Data de emissão;20;27;8;DAAAAMMDD;;Data de emissão do lançamento;
+D;Série;28;32;5;B;;Brancos;
+D;Sub-Série;33;37;5;B;;Brancos;
+D;Tipo de documento;38;42;5;B;;Brancos;
+D;Modelo de documento;43;52;10;B;;Brancos;
+D;Natureza da operação;53;53;1;B;;Brancos;
+D;Número do documento;54;68;15;C;;t402cotm.nr_doc;
+D;Tipo de lançamento;69;70;2;F;16;4 – Despesa corrente, 7 – Adiantamento, 16 – Liberação de crédito;
+D;CPF/CNPJ do fornecedor;71;84;14;Z;;Zeros;
+D;Valor do lançamento;85;104;20;N2;;t402cotm.vr_lnc_1;
+D;Código do centro de resultado;105;114;10;Z;;Zeros;
+D;Código do Banco;115;117;3;Z;;Zeros;
+D;Código de compensação;118;120;3;B;;Brancos;
+D;Agência;121;130;10;B;;Brancos;
+D;Dígito da agência;131;132;2;B;;Brancos;
+D;Número da conta;133;152;20;B;;Brancos;
+D;Dígito da conta;153;154;2;B;;Brancos;
+D;Tipo de conta;155;156;2;B;;Brancos;
+D;Código da programação;157;166;10;Z;;Zeros;
+D;Código da forma de pagamento;167;176;10;Z;;Zeros;
+D;Histórico;177;676;500;C;;LIBERACAO DE CREDITO REFERENTE AO CONTRATO cd_cli/sg_mod/nr_ctr/nr_adl;
+T;Tipo de Registro;1;1;1;F;T;"T";X
+T;Valor total dos pagamentos;2;21;20;N2;;;
+T;Quantidade de registros;22;31;10;T-2;;Quantidade de registros do tipo D (Detalhe);
