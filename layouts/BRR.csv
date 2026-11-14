@@ -1,0 +1,258 @@
+Id;Nome;Inic;Fim;Tam;TP;Fixo;Formato;Tag
+0;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+0;Lote de Serviço;4;7;4;IN(0000@Header de Arquivo);0000;0000 = Header de Arquivo (Constante);
+0;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);0;'0' - Header de Arquivo;X
+0;Uso Exclusivo FEBRABAN/CNAB;9;17;9;A;;Brancos;
+0;Tipo de Inscrição da Empresa;18;18;1;IN(1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ;
+0;Número de Inscrição da Empresa;19;32;14;ECPF/CNPJ;;CPF / CNPJ;
+0;Código do Convênio no Banco;33;37;5;N;;Informado pela Agência;
+0;Brancos;38;52;15;A;;Brancos;
+0;Agência Mantenedora da Conta;53;57;5;N;;Banrisul (0AAAA);
+0;Constante Zero;58;58;1;IN(0@Zero - Constante);0;'0' - Constante;
+0;Zeros ou Brancos;59;61;3;IN(000@Zeros|   @Brancos);;'000' (zeros) ou brancos;
+0;Número da Conta Corrente;62;71;10;N;;Conta Corrente;
+0;Dígito Verificador Conta;72;72;1;IN(0@Zero| @Branco);;0 (zero) ou branco;
+0;Nome da Empresa;73;102;30;A;;Nome da Empresa;
+0;Nome do Banco;103;132;30;A;BANRISUL;Nome do Banco;
+0;Uso Exclusivo FEBRABAN/CNAB;133;142;10;A;;Brancos;
+0;Código Remessa/Retorno;143;143;1;IN(1@Remessa|2@Retorno|3@Duplo Retorno / Erro Arquivo);;1=Remessa / 2=Retorno / 3=Duplo ou Erro;
+0;Data de Geração do Arquivo;144;151;8;DDDMMAAAA;;DDMMAAAA;
+0;Hora de Geração do Arquivo;152;157;6;N;;HHMMSS;
+0;Número Sequencial do Arquivo;158;163;6;N0;;Evoluir 1 a cada header;
+0;Número da Versão do Leiaute;164;166;3;IN(020@Versão 020|030@Versão 030|040@Versão 040);040;020, 030 ou 040;
+0;Densidade de Gravação do Arquivo;167;171;5;IN(01600@1600 BPI|06250@6250 BPI);;1600 ou 6250 BPI;
+0;Para Uso do Banco;172;191;20;A;;Para uso do Banco (Motivo rejeição se Retorno=3);
+0;Para Uso da Empresa;192;211;20;A;;Para uso da Empresa;
+0;Uso Exclusivo FEBRABAN/CNAB;212;240;29;A;;Brancos;
+1;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+1;Lote de Serviço;4;7;4;N0;;Sequencial do Lote;
+1;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);1;'1' - Header de Lote;X
+1;Tipo da Operação;9;9;1;IN(C@Crédito);C;'C' - Crédito (Constante);X
+1;Tipo de Serviço;10;11;2;IN(01@Cobrança|10@Pagamento de Dividendos|12@TED (até 14:45h SPB)|13@TED/STR006 (IF Destinatária)|20@Pagamento Fornecedor|22@Tributos sem Cód. Barras (Seg. N)|30@Pagamento Salários|50@Sinistros Segurados|60@Despesas Viajante em Trânsito|70@Pagamento Autorizado|71@Guia Depósito Judicial Remunerado|72@Guia Única de Custas|75@Pagamento Credenciados|80@Representantes / Vendedores|90@Benefícios INSS (GPS PJ sem barras)|91@G.A com Cód. Barras|92@GNRE com Cód. Barras|93@DARF com Cód. Barras|94@Arrecadação com Cód. Barras|95@Telecomunicações e NET c/ Barras|96@GPS PJ com Cód. Barras|97@Simples Nacional (DAS)|98@Pagamentos Diversos);;01,10,12,13,20,22,30,50,60,70-72,75,80,90-98;
+1;Forma de Lançamento;12;13;2;IN(01@Crédito em C/C (Seg. 3A)|03@DOC / TED (Seg. 3A)|10@OP à Disposição (Seg. 3A)|16@DARF Normal sem Cód. Barras (Seg. 3N2)|18@DARF Simples sem Cód. Barras (Seg. 3N3)|30@Liquidação Títulos Banrisul (Seg. 3J)|31@Liquidação Títulos Outros Bancos (Seg. 3J)|32@Pagamento INSS GPS PJ (Seg. 3I)|33@Arrecadações Diversas (Seg. 3D));;01=C/C, 03=DOC/TED, 10=OP, 16/18=DARF, 30/31=Títulos, 32=INSS, 33=Arrecadação;
+1;Número da Versão do Header do Lote;14;16;3;IN(020@Versão 020|030@Versão 030|040@Versão 040);040;020, 030 ou 040;
+1;Uso Exclusivo FEBRABAN/CNAB;17;17;1;A;;Brancos;
+1;Tipo de Inscrição da Empresa;18;18;1;IN(1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ;
+1;Número de Inscrição da Empresa;19;32;14;ECPF/CNPJ;;CPF / CNPJ;
+1;Código do Convênio no Banco;33;37;5;N;;Informado pela Agência;
+1;Brancos;38;52;15;A;;Brancos;
+1;Agência Mantenedora da Conta;53;57;5;N;;Banrisul (0AAAA);
+1;Zeros;58;61;4;N;0000;Constante '0000';
+1;Número da Conta Corrente;62;71;10;N;;Conta Corrente;
+1;Branco;72;72;1;A;;Branco;
+1;Nome da Empresa;73;102;30;A;;Nome da Empresa;
+1;Brancos;103;142;40;A;;Brancos;
+1;Endereço da Empresa;143;172;30;A;;Nome da Rua, Av, Praça, etc;
+1;Número do Local;173;177;5;N0;;Número do local;
+1;Complemento;178;192;15;A;;Casa, Apto, Sala, etc;
+1;Nome da Cidade;193;212;20;A;;Nome da Cidade;
+1;CEP;213;220;8;ECEP;;CEP;
+1;Sigla do Estado;221;222;2;A;;Sigla da UF;
+1;Classificação da Ordem dos Registros;223;224;2;IN(VA@Ordem Ascendente de Valor|VD@Ordem Descendente de Valor|  @Não Reordena os Registros do Lote);;VA=Ascendente / VD=Descendente / Brancos=Não reordena;
+1;Uso Exclusivo FEBRABAN/CNAB;225;230;6;A;;Brancos;
+1;Códigos de Ocorrências p/ Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,CC,HA..HF,AA..ZA);
+3A;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3A;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3A;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3A;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3A;Código de Segmento do Reg. Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);A;'A' - Pagamento C/C, DOC, OP e TED;X
+3A;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão (Constante);
+3A;Código de Instrução do Movimento;16;17;2;IN(00@Inclusão do Registro Detalhe);00;'00' - Inclusão do Registro Detalhe;
+3A;Código da Câmara Centralizadora;18;20;3;IN(000@C/C ou OP Banrisul|010@Câmara de Compensação (DOC)|018@CIP/STR (Somente TED)|810@TED);;010=Câmara Compensação / 018,810=Somente TED / 000=C/C ou OP;
+3A;Código do Banco do Favorecido;21;23;3;N;;041=Banrisul (Lçto 01/10) / NNN=Outros Bancos s/ DV (Lçto 03);
+3A;Agência Mantenedora da Cta do Favor.;24;28;5;N;;Agência Favorecido (0AAAA para Banrisul / sem DV para outros);
+3A;Dígito Verificador da Agência;29;29;1;IN(0@Zero| @Branco);;0 (zero) ou branco;
+3A;Número da Conta Corrente;30;42;13;N;;Lçto 01: 000+Conta / Lçto 03: Conta c/ DV / Lçto 10: Zeros;
+3A;Dígito Verificador da Ag/Conta;43;43;1;IN(0@Zero| @Branco);;0 (zero) ou branco;
+3A;Nome do Favorecido;44;73;30;A;;Nome do Favorecido (sem acento ou ç);
+3A;Seu Número - Nº do Docto Empresa;74;88;15;A;;Documento Empresa (Lçto 01/03: 6 prim. numéricas únicas);
+3A;Finalidade do Cliente TED/DOC;89;93;5;IN(00000@Não Informada (C/C ou OP)|00001@TED: Impostos, Tributos e Taxas / DOC: Crédito em C/C|00002@TED: Concessionárias Serv. Público / DOC: Aluguéis e Condomínio|00003@TED: Dividendos / DOC: Duplicata ou Título|00004@TED: Salários / DOC: Dividendos|00005@TED: Fornecedores / DOC: Mensalidade Escolar|00006@TED: Honorários / DOC: Salários|00007@TED: Aluguéis e Condomínio / DOC: Fornecedores|00008@TED: Duplicatas e Títulos / DOC: Câmbio Fundo/Bolsa|00009@TED: Mensalidade Escolar / DOC: Arrecadação ou Tributos|00010@TED: Crédito em Conta / DOC: Transferência Internet Reais|00011@TED: Corretoras / DOC: DOC para Poupança|00012@TED: Boleto em Cartório / DOC: Depósito Judicial|00013@TED: Tarifas Arrec. Convênios / DOC: Pensão Alimentícia|00014@TED: Repasse Títulos Protesto / DOC: Restituição IRPF|00015@TED: Liquidação Operação Cartão / DOC: Dif. FGTS 110/01|00016@DOC: Pagamento Bolsa Auxílio|00017@DOC: Remuneração Cooperado|00018@TED: Seguro Habitacional SFH / DOC: Honorários|00019@TED: Operações FDS Caixa / DOC: Pagamento Prebenda|00020@TED: Pagamento Operações Crédito|00100@TED: Depósito Judicial|00101@TED: Pensão Alimentícia|00110@TED: Transferência Mesma Titularidade|00200@TED: Transferência Internacional em Reais|00201@TED: Ajuste Posição Mercado Futuro|00202@TED: Repasse Valores BNDES|00203@TED: Liquidação Compromissos BNDES|00204@TED: Compra/Venda Ações Bolsas/Balcão|00205@TED: Contratos Referenciados Ações/Índices|00206@TED: Operação de Câmbio|00300@TED: Restituição Imposto de Renda|00400@TED: TEA - Transf. Eletrônica Agendada|00500@TED: Restituição Prêmios Seguros|00501@TED: Indenização Sinistro Seguro|00502@TED: Prêmio Co-Seguro|00503@TED: Restituição Prêmio Co-Seguro|00504@TED: Indenização Sinistro Co-Seguro|00505@TED: Prêmio Resseguro|00506@TED: Restituição Prêmio Resseguro|00507@TED: Indenização Sinistro Resseguro|00508@TED: Restituição Indenização Resseguro|00509@TED: Despesas com Sinistros|00510@TED: Inspeções/Vistorias Prévias|00511@TED: Resgate Título Capitalização|00512@TED: Sorteio Título Capitalização|00513@TED: Devolução Mensalidade Capitalização|00514@TED: Restituição Contrib. Previdenciária|00515@TED: Benefício Previdenciário Pecúlio|00516@TED: Benefício Previdenciário Pensão|00517@TED: Benefício Previdenciário Aposentadoria|00518@TED: Resgate Previdenciário|00519@TED: Comissão Corretagem|00520@TED: Portabilidade Reserva Seguro/Previdência);;Anexos 5.1 (TED) e 5.2 (DOC) / 00110=Mesma Titularidade;
+3A;Data do Crédito;94;101;8;DDDMMAAAA;;DDMMAAAA;
+3A;Tipo de Moeda;102;104;3;IN(BRL@Real);BRL;'BRL' - Real (Constante);
+3A;Zeros;105;119;15;N;000000000000000;Zeros;
+3A;Valor a Ser Creditado;120;134;15;N2;;Valor Pagamento;
+3A;Nosso Número - Nº Atribuído pelo Banco;135;154;20;A;;Retorno Banco;
+3A;Data Real da Efetivação do Crédito;155;162;8;DDDMMAAAA;;DDMMAAAA (Retorno Banco);
+3A;Valor Real do Crédito Efetuado;163;177;15;N2;;Retorno Banco;
+3A;Brancos;178;182;5;A;;Brancos;
+3A;CIT TED - Identificador Transferência;183;202;20;A;;CIT TED;
+3A;Tipo de Inscrição do Favorecido;203;203;1;IN(1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ;
+3A;Número de Inscrição do Favorecido;204;217;14;ECPF/CNPJ;;CPF / CNPJ;
+3A;Uso Exclusivo FEBRABAN/CNAB;218;229;12;A;;Brancos;
+3A;Aviso ao Favorecido;230;230;1;IN(0@Não Emite Aviso ao Favorecido);0;'0' - Não Emite Aviso;
+3A;Códigos das Ocorrências de Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+3C;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3C;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3C;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3C;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote;
+3C;Código de Segmento no Registro Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);C;'C' - Agência/Conta Substituída (Retorno);X
+3C;Uso Exclusivo FEBRABAN/CNAB;15;17;3;A;;Brancos;
+3C;Zeros 01;18;32;15;N;000000000000000;Zeros;
+3C;Zeros 02;33;47;15;N;000000000000000;Zeros;
+3C;Zeros 03;48;62;15;N;000000000000000;Zeros;
+3C;Zeros 04;63;77;15;N;000000000000000;Zeros;
+3C;Zeros 05;78;92;15;N;000000000000000;Zeros;
+3C;Nova Agência do Favorecido;93;97;5;N;;Nova Agência Favorecido;
+3C;Dígito Verificador da Agência;98;98;1;IN(0@Zero| @Branco);;0 (zero) ou branco;
+3C;Nova Conta Corrente do Favorecido;99;111;13;N;;000 + Conta do Favorecido;
+3C;Branco;112;112;1;A;;Branco;
+3C;Zeros 06;113;127;15;N;000000000000000;Zeros;
+3C;Uso Exclusivo FEBRABAN/CNAB;128;240;113;A;;Brancos;
+3D;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3D;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3D;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3D;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3D;Código de Segmento no Registro Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);D;'D' - Arrecadações com Cód. Barras;X
+3D;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão (Constante);
+3D;Código de Instrução para Alteração;16;17;2;IN(00@Inclusão);00;'00' - Inclusão;
+3D;Código de Barras;18;65;48;N;;Código de Barras;
+3D;Data de Pagamento;66;73;8;DDDMMAAAA;;DDMMAAAA;
+3D;Valor do Pagamento;74;88;15;N2;;Valor Pagamento;
+3D;Em Branco - Reservado;89;109;21;A;;Brancos;
+3D;Para Uso da Empresa;110;169;60;A;;Para uso da Empresa;
+3D;Código da Agência;170;173;4;N;;Retorno Banco;
+3D;Máquina;174;177;4;A;;Retorno Banco;
+3D;N.D.U.;178;180;3;N;;Retorno Banco;
+3D;N.S.U.;181;186;6;N;;Retorno Banco;
+3D;Nome do Cedente/Favorecido;187;216;30;A;;Retorno Banco;
+3D;Reservado;217;225;9;A;;Brancos;
+3D;Reservado Sequencial Contas a Pagar;226;230;5;A;;Sequencial Contas a Pagar;
+3D;Códigos de Ocorrência p/ Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+3I;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3I;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3I;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3I;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3I;Código de Segmento no Registro Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);I;'I' - Pagamento de INSS (GPS sem Barras);X
+3I;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão (Constante);
+3I;Código de Instrução para Alteração;16;17;2;IN(00@Inclusão);00;'00' - Inclusão;
+3I;Código de Pagamento do INSS;18;21;4;N;;Cód. GPS INSS (ex: 2003=Simples, 2100=Empresa CNPJ, 2208=CEI, 2631=Retenção);
+3I;Identificador do Pagamento;22;35;14;ECPF/CNPJ;;CNPJ / CEI / DEBCAD / NIT-PIS / NB;
+3I;Competência do Pagamento;36;41;6;N;;MMAAAA;
+3I;Data do Vencimento;42;49;8;DDDMMAAAA;;DDMMAAAA;
+3I;Valor 06 - INSS;50;64;15;N2;;Valor INSS;
+3I;Valor 07;65;79;15;N2;;Valor 07;
+3I;Valor 08;80;94;15;N2;;Valor 08;
+3I;Valor 09 - Outras Entidades;95;109;15;N2;;Valor Outras Entidades;
+3I;Valor 10 - Multa e Juros;110;124;15;N2;;Multa e Juros;
+3I;Valor 11 - Total Arrecadado;125;139;15;N2;;Soma valores 06 a 10;
+3I;Branco;140;140;1;A;;Branco;
+3I;Agência Cobradora;141;144;4;N;;Retorno Banco;
+3I;Número da Máquina;145;148;4;A;;Retorno Banco;
+3I;N.D.U. Sistema Banrisul;149;151;3;N;;Retorno Banco;
+3I;N.S.U. Autenticação;152;156;5;N;;Retorno Banco;
+3I;Nome do Contribuinte;157;186;30;A;;Nome do Contribuinte;
+3I;N.S.U.;187;192;6;N;;Retorno Banco;
+3I;Reservado;193;209;17;A;;Reservado;
+3I;Reservado para o Futuro;210;225;16;A;;Reservado;
+3I;Reservado Sequência Contas a Pagar;226;230;5;A;;Sequencial Contas a Pagar;
+3I;Códigos de Ocorrências p/ Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+3J-52;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3J-52;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3J-52;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3J-52;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote;
+3J-52;Código de Segmento no Reg. Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);J;'J' - Segmento J (Opcional J-52);X
+3J-52;Uso Exclusivo FEBRABAN/CNAB;15;15;1;A;;Brancos;
+3J-52;Código de Movimento Remessa;16;17;2;IN(01@Entrada de Título / Inclusão);01;'01' - Movimento Remessa (Constante);
+3J-52;Identificação do Registro Opcional;18;19;2;IN(52@Dados de Sacado, Cedente e Sacador/Avalista);52;'52' - Registro Opcional J-52;X
+3J-52;Tipo de Inscrição do Sacado;20;20;1;IN(0@Não Informado|1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ (0 = Não informado);
+3J-52;Número de Inscrição do Sacado;21;35;15;ECPF/CNPJ;;CPF / CNPJ Sacado (15 dígitos c/ zero à esq.);
+3J-52;Nome do Sacado;36;75;40;A;;Nome do Sacado;
+3J-52;Tipo de Inscrição do Cedente;76;76;1;IN(0@Não Informado|1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ (0 = Não informado);
+3J-52;Número da Inscrição do Cedente;77;91;15;ECPF/CNPJ;;CPF / CNPJ Cedente (Obrig. >= R$250mil);
+3J-52;Nome do Cedente;92;131;40;A;;Nome Cedente do Título;
+3J-52;Tipo de Inscrição do Sacador;132;132;1;IN(0@Não Informado|1@CPF|2@CNPJ);;1 = CPF / 2 = CNPJ (0 = Não informado);
+3J-52;Número da Inscrição do Sacador;133;147;15;ECPF/CNPJ;;CPF / CNPJ Sacador/Avalista;
+3J-52;Nome do Sacador;148;187;40;A;;Nome Sacador do Título;
+3J-52;Uso Exclusivo FEBRABAN/CNAB;188;240;53;A;;Brancos;
+3J;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3J;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3J;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3J;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3J;Código de Segmento no Reg. Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);J;'J' - Pagamento de Títulos;X
+3J;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão;
+3J;Código de Instrução p/ Inclusão;16;17;2;IN(00@Inclusão);00;'00' - Inclusão;
+3J;Código do Banco Destino;18;20;3;N;;041=Banrisul (Lçto 30) / NNN=Outros Bancos (Lçto 31);
+3J;Código da Moeda;21;21;1;IN(2@Dólar Americano Comercial (venda)|3@Dólar Americano Turismo (venda)|4@ITRD|5@IDTR|6@UFIR Diária|7@UFIR Mensal|8@FAJ - TR|9@Real);9;2=Dólar Com / 3=Dólar Tur / 4=ITRD / 5=IDTR / 6=UFIR D / 7=UFIR M / 8=FAJ-TR / 9=Real;
+3J;Dígito Verificador do Código de Barras;22;22;1;N;;DAC Cód. Barras;
+3J;Fator de Vencimento do Cód. Barras;23;26;4;N;;Fator Vencimento;
+3J;Valor Impresso no Código de Barras;27;36;10;N2;;Valor Cód. Barras;
+3J;Campo Livre do Código de Barras;37;61;25;N;;Posições 20 a 44 Cód.;
+3J;Nome do Cedente;62;91;30;A;;Nome Cedente;
+3J;Data do Vencimento;92;99;8;DDDMMAAAA;;DDMMAAAA;
+3J;Valor Nominal do Título;100;114;15;N2;;Valor Nominal;
+3J;Valor Desconto e Abatimento;115;129;15;N2;;Desconto/Abatimento;
+3J;Zeros;130;144;15;N;000000000000000;Zeros;
+3J;Data do Pagamento;145;152;8;DDDMMAAAA;;DDMMAAAA;
+3J;Valor do Pagamento;153;167;15;N2;;Valor Pagamento;
+3J;Quantidade da Moeda;168;182;15;N5;000000000000000;Zeros;
+3J;Brancos;183;187;5;A;;Brancos;
+3J;Identificação do Cedente (1+CPF/2+CNPJ);188;202;15;N;;1+CPF ou 2+CNPJ (Obrig. >= R$250mil Outros Bancos);
+3J;Identificação do Sacado (1+CPF/2+CNPJ);203;217;15;N;;1+CPF ou 2+CNPJ (Obrig. >= R$250mil Outros Bancos);
+3J;Uso Exclusivo FEBRABAN/CNAB;218;227;10;A;;Brancos;
+3J;DVs da Linha Digitável (DV1, DV2, DV3);228;230;3;N;;DVs Linha Digitável;
+3J;Códigos das Ocorrências do Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+3N2;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3N2;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3N2;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3N2;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3N2;Código de Segmento no Reg. Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);N;'N' - Tributos sem Cód. Barras (N2 DARF Normal);X
+3N2;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão;
+3N2;Código da Instrução de Movimento;16;17;2;IN(00@Inclusão de movimento para registro);00;'00' - Inclusão de movimento;
+3N2;Número do Documento Empresa - Seu Número;18;37;20;A;;Documento Empresa;
+3N2;Número do Documento no Banco;38;57;20;A;;Brancos;
+3N2;Nome do Contribuinte;58;87;30;A;;Nome Contribuinte;
+3N2;Data do Pagamento;88;95;8;DDDMMAAAA;;DDMMAAAA;
+3N2;Valor do Pagamento;96;110;15;N2;;Valor Pagamento;
+3N2;Código da Receita do Tributo;111;116;6;A;;Cód. Receita RFB (alinhado à esq. c/ brancos à dir.);
+3N2;Tipo de Identificação do Contribuinte;117;118;2;IN(01@CNPJ|02@CPF);;01=CNPJ / 02=CPF;
+3N2;Identificação do Contribuinte;119;132;14;ECPF/CNPJ;;CNPJ / CPF;
+3N2;Código de Identificação do Tributo;133;134;2;IN(16@DARF Normal (sem Cód. Barras)|18@DARF Simples (sem Cód. Barras));16;'16' - DARF Normal (Constante);X
+3N2;Período de Apuração;135;142;8;DDDMMAAAA;;DDMMAAAA;
+3N2;Número de Referência do Tributo;143;159;17;A;;SRF, NIRF, etc;
+3N2;Valor Nominal do Tributo;160;174;15;N2;;Valor Principal;
+3N2;Valor da Multa;175;189;15;N2;;Valor Multa;
+3N2;Valor dos Juros e Encargos;190;204;15;N2;;Juros/Encargos;
+3N2;Data do Vencimento Nominal;205;212;8;DDDMMAAAA;;DDMMAAAA;
+3N2;Uso Exclusivo FEBRABAN/CNAB;213;230;18;A;;Brancos;
+3N2;Códigos das Ocorrências para Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+3N3;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+3N3;Lote de Serviço;4;7;4;N0;;Número do Lote;
+3N3;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);3;'3' - Registro Detalhe;X
+3N3;Número Sequencial do Registro no Lote;9;13;5;N0;;Sequencial no Lote (inicia em 00001);
+3N3;Código de Segmento no Reg. Detalhe;14;14;1;IN(A@Pagamentos C/C, OP, DOC e TED|C@Agência/Conta Substituída (Retorno)|D@Arrecadações com Cód. de Barras|I@Pagamento de INSS (GPS sem Barras)|J@Pagamento de Títulos|N@Tributos e Impostos sem Cód. Barras);N;'N' - Tributos sem Cód. Barras (N3 DARF Simples);X
+3N3;Tipo de Movimento;15;15;1;IN(0@Inclusão);0;'0' - Inclusão;
+3N3;Código da Instrução de Movimento;16;17;2;IN(00@Inclusão de movimento para registro);00;'00' - Inclusão de movimento;
+3N3;Número do Documento Empresa - Seu Número;18;37;20;A;;Documento Empresa;
+3N3;Número do Documento no Banco;38;57;20;A;;Brancos;
+3N3;Nome do Contribuinte;58;87;30;A;;Nome Contribuinte;
+3N3;Data do Pagamento;88;95;8;DDDMMAAAA;;DDMMAAAA;
+3N3;Valor do Pagamento;96;110;15;N2;;Valor Pagamento;
+3N3;Código da Receita do Tributo;111;116;6;IN(6106  @DARF Simples Nacional (6106)|6106@DARF Simples Nacional (6106));6106;'6106  ' - DARF Simples (alinhado à esq.);
+3N3;Tipo de Identificação do Contribuinte;117;118;2;IN(01@CNPJ|02@CPF);;01=CNPJ / 02=CPF;
+3N3;Identificação do Contribuinte;119;132;14;ECPF/CNPJ;;CNPJ / CPF;
+3N3;Código de Identificação do Tributo;133;134;2;IN(16@DARF Normal (sem Cód. Barras)|18@DARF Simples (sem Cód. Barras));18;'18' - DARF Simples (Constante);X
+3N3;Período de Apuração;135;142;8;DDDMMAAAA;;DDMMAAAA;
+3N3;Valor Receita Bruta Acumulada Período;143;157;15;N2;;Receita Bruta Acumulada;
+3N3;Percentual sobre Receita Bruta;158;164;7;N2;;Percentual;
+3N3;Valor Principal;165;179;15;N2;;Valor Principal;
+3N3;Valor da Multa;180;194;15;N2;;Valor Multa;
+3N3;Valor dos Juros e Encargos;195;209;15;N2;;Juros/Encargos;
+3N3;Uso Exclusivo FEBRABAN/CNAB;210;230;21;A;;Brancos;
+3N3;Códigos das Ocorrências para Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,AA..ZA);
+5;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+5;Lote de Serviço;4;7;4;N0;;Número do Lote;
+5;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);5;'5' - Trailler de Lote;X
+5;Brancos;9;17;9;A;;Brancos;
+5;Total de Registros no Lote;18;23;6;N0;;Registros 1+3+5;
+5;Somatório dos Valores;24;41;18;N2;;Soma dos Valores;
+5;Somatório de Quantidade de Moedas;42;59;18;N5;000000000000000000;Zeros;
+5;Uso Exclusivo FEBRABAN/CNAB;60;230;171;A;;Brancos;
+5;Códigos de Ocorrência para Retorno;231;240;10;A;;Códigos de retorno (Anexo 5.3: 00,TA,AA..ZA);
+9;Código do Banco na Compensação;1;3;3;IN(041@Banrisul);041;041 = Banrisul (Constante);
+9;Lote de Serviço;4;7;4;IN(9999@Trailler de Arquivo);9999;9999 = Trailler de Arquivo (Constante);
+9;Tipo de Registro;8;8;1;IN(0@Header de Arquivo|1@Header de Lote|3@Detalhe|5@Trailler de Lote|9@Trailler de Arquivo);9;'9' - Trailler de Arquivo;X
+9;Brancos - Uso Exclusivo FEBRABAN/CNAB;9;17;9;A;;Brancos;
+9;Quantidade do Total de Lotes no Arquivo;18;23;6;N0;;Total de Lotes;
+9;Quantidade de Registros no Arquivo;24;29;6;N0;;Total de Registros;
+9;Zeros;30;35;6;N;000000;Constante '000000';
+9;Brancos - Uso Exclusivo FEBRABAN/CNAB;36;240;205;A;;Brancos;
