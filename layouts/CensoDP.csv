@@ -1,0 +1,20 @@
+Id;Nome;Inic;Fim;Tam;TP;Fixo;Formato;Tag
+U;Censo Depósito a Prazo;1;1;1;F;0;;X
+U;CPF/CGC do cliente;2;15;14;ECPF/CNPJ;;;
+U;Faixa de valor;16;18;3;IN(101@0-5K|102@5-10K|103@10-15K|104@15-20K|105@20-25K|106@25-30K|107@30-35K|108@35-40K|109@40-45K|110@45-50K||111@50-60K|112@60-70K|113@70-80K|114@80-90K|115@90-100K|116@100-150K|117@150-200K|118@200-250K|119@250-300K|120@300-350K|121@350-400K|122@400-450K|123@450-500K|124@500-600K|125@600-700K|126@700-800K|127@800-900K|128@900-1M|129@1M >);;; 
+U;Quantidade aplicações pessoa física;19;26;8;N0;;;
+U;Valor aplicação pessoa física;27;43;17;N2;;;
+U;Quantidade aplicações pessoa jurídica;44;51;8;N0;;;
+U;Valor aplicação pessoa jurídica;52;68;17;N2;;;
+U;Quantidade aplicações pessoa física (Letra Cambio);69;76;8;N0;;;
+U;Valor aplicação pessoa física (Letra Cambio);77;93;17;N2;;;
+U;Quantidade aplicações pessoa jurídica (Letra Cambio);94;101;8;N0;;;
+U;Valor aplicação pessoa jurídica (Letra Cambio);102;118;17;N2;;;
+U;Quantidade aplicações pessoa física (Letra Imob);119;126;8;N0;;;
+U;Valor aplicação pessoa física (Letra Imob);127;143;17;N2;;;
+U;Quantidade aplicações pessoa jurídica (Letra Imob);144;151;8;N0;;;
+U;Valor aplicação pessoa jurídica (Letra Imob);152;168;17;N2;;;
+U;Quantidade aplicações pessoa física (Letra Hipotec);169;176;8;N0;;;
+U;Valor aplicação pessoa física (Letra Hipotec);177;193;17;N2;;;
+U;Quantidade aplicações pessoa jurídica (Letra Hipotec);194;201;8;N0;;;
+U;Valor aplicação pessoa jurídica (Letra Hipotec);202;218;17;N2;;;

@@ -1,0 +1,20 @@
+Id;Nome;Inic;Fim;Tam;TP;Fixo;Formato;Tag
+U;Censo Conta Corrente / Poupança Inativa;1;1;1;F;0;;X
+U;CPF/CGC do cliente;2;15;14;ECPF/CNPJ;;;
+U;Faixa de valor;16;17;2;IN(01@0-100|02@100-500|03@500-1K|04@1-2K|05@2-5K|06@5-10K|07@10-15K|08@15-20K|09@20-25K|10@25-30K|11@30-35K|12@35-40K|13@40-45K|14@45-50K|15@50-60K|16@60-70K|17@70-80K|18@80-90K|19@90-100K|20@100-150K|21@150-200K|22@200-250K|23@250-300K|24@300-350K|25@350-400K|26@400-450K|27@450-500K|28@500-600K|29@600-700K|30@700-800K|31@800-900K|32@900-1M|33@1M >);;; 
+U;Quantidade pessoa física (Depósito a Vista);18;25;8;N0;;;
+U;Valor saldo pessoa física (Depósito a Vista);26;36;11;N2;;;
+U;Quantidade pessoa jurídica (Depósito a Vista);37;44;8;N0;;;
+U;Valor saldo pessoa jurídica (Depósito a Vista);45;55;11;N2;;;
+U;Quantidade pessoa física (Depósito Poupança);56;63;8;N0;;;
+U;Valor saldo pessoa física (Depósito Poupança);64;74;11;N2;;;
+U;Quantidade pessoa jurídica (Depósito Poupança);75;82;8;N0;;;
+U;Valor saldo pessoa jurídica (Depósito Poupança);83;93;11;N2;;;
+U;Quantidade pessoa física (Depósito Investimento);94;101;8;N0;;;
+U;Valor saldo pessoa física (Depósito Investimento);102;112;11;N2;;;
+U;Quantidade pessoa jurídica (Depósito Investimento);113;120;8;N0;;;
+U;Valor saldo pessoa jurídica (Depósito Investimento);121;131;11;N2;;;
+U;Quantidade pessoa física (Depósito Não Mov p/Cheque);132;139;8;N0;;;
+U;Valor saldo pessoa física (Depósito Não Mov p/Cheque);140;150;11;N2;;;
+U;Quantidade pessoa jurídica (Depósito Não Mov p/Cheque);151;158;8;N0;;;
+U;Valor saldo pessoa jurídica (Depósito Não Mov p/Cheque);159;169;11;N2;;;

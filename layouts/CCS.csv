@@ -1,0 +1,29 @@
+Id;Nome;Inic;Fim;Tam;TP;Fixo;Formato;Tag
+0;Tipo de registro;1;1;1;F;0;;X
+0;CPF/CNPJ básico da instituição*;2;9;8;N;;8 primeiros dígitos do CNPJ;
+0;Sigla da interface;10;11;2;C;;;
+0;Data base do movimento;12;19;8;DAAAAMMDD;;aaaammdd;
+x;Tipo de registro;1;1;1;IN(1@Inclusão|2@Alteração|3@Exclusão|4@Inclusão conta popular);1|2|3|4;1 = Inclusão/2 = Alteração/3 = Exclusão/4 = Inclusão conta popular ;X
+x;CPF/CNPJ básico da instituição*;2;9;8;N;;8 primeiros dígitos do CNPJ;
+x;CPF/CNPJ do cliente*;10;23;14;ECPF/CNPJ;;CPF/CNPJ completo. Deve possuir 11 (se o tipo de pessoa = F) ou 14 posições (se o tipo de pessoa = J), preenchidos com zeros à esquerda (utilizar 3 zeros a esquerda, para completar o tamanho do campo, no caso do CPF).;
+x;Tipo de pessoa;24;24;1;IN(F|J);;Física = F / Jurídica = J;
+x;Nome do cliente;25;104;80;ENOME;;;
+x;Data início;105;112;8;DAAAAMMDD;;Data inicial do relacionamento, no formato “aaaammdd”. ;
+x;Data final;113;120;8;DAAAAMMDD;;Data final do relacionamento, no formato “aaaammdd”. Esta data é opcional e, caso não exista, enviar 01011900 ou 8 zeros.;
+x;Tipo do bem/direito/valor;121;121;1;IN(1@Conta Depósito|2@Conta Poupança|3@Conta Investimento|4@Outras Aplicações);;1 = Conta Depósito 2 = Conta Poupança 3 = Conta Investimento 4 = Outras Aplicações;
+x;Qualificador  operação CCS;122;122;1;IN(N@Normal|P@Conta Popular|C@Inclusão no contexto de conglomerado);;N = Normal / P = Conta Popular / C = Inclusão no contexto de conglomerado;
+x;Número da agência*;123;126;4;N;;;
+x;Número da conta*;127;139;13;N;;;
+x;Tipo do vínculo;140;140;1;IN(1@Titular|2@Co-titular|3@Procurador|4@Responsável|5@ Representante);;1 = Titular  / 2 = Co-titular / 3 = Procurador / 4 = Responsável / 5 = Representante;
+x;Tipo de pessoa do titular da conta;141;141;1;IN(F@Física|J@Jurídica);;Física = F / Jurídica = J – Este campo é utilizado apenas quando o tipo de vínculo não é 1.;
+x;CPF/CNPJ do cliente titular da conta*;142;155;14;ECPF/CNPJ;;CPF/CNPJ completo. Deve possuir 11 (se o tipo de pessoa = F) ou 14 posições (se o tipo de pessoa = J), preenchidos com zeros à esquerda (utilizar 3 zeros a esquerda, para completar o tamanho do campo, no caso do CPF). Este campo é utilizado apenas quando o tipo de vínculo não é 1 (titular).;
+x;Sigla do módulo do sistema de origem;156;157;2;C;;CC, CI, PP, OP, DP, ... (conta corrente, investimento, poupança, open, depósito a prazo, ...);
+x;Código da unidade*;158;161;4;N;;Normalmente, é idêntico ao número da agência.;
+x;Código do cliente*;162;171;10;N;;;
+x;Identificação da operação;172;196;25;C;;Código numérico ou não, que contém a chave de identificação da operação no sistema de origem (para Conta Depósito, Investimento ou Poupança, normalmente o conteúdo deste campo é o número da conta formatado com 10 dígitos, incluindo os zeros à esquerda).;
+x;Tipo Produto;197;197;1;C;;Tipo de produto, conforme a tabela 1, em anexo.;
+9;Tipo de registro;1;1;1;F;9;;X
+9;CPF/CNPJ básico da instituição;2;9;8;N;;8 primeiros dígitos do CNPJ;
+9;Sigla da interface;10;11;2;C;;;
+9;Data base do movimento;12;19;8;DAAAAMMDD;;aaaammdd;
+9;Total de registros*;20;28;9;T;;Número total de linhas, incluindo o header e o trailler.;
